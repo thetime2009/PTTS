@@ -1,28 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
 <meta charset="UTF-8">
-<title>Supunsa Card</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Supunsa - Digital Card</title>
 <style>
-body{
-margin:0;
-background:#f2f2f2;
-text-align:center;
-}
+    body {
+        margin: 0;
+        padding: 20px 0;
+        background: #f2f2f2;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
 
-img{
-width:90%;
-max-width:600px;
-margin-top:30px;
-box-shadow:0 10px 25px rgba(0,0,0,0.3);
-border-radius:10px;
-}
+    .card-container {
+        display: inline-block;
+        width: 90%;
+        max-width: 500px;
+    }
+
+    img {
+        width: 100%;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        border-radius: 15px;
+        display: block;
+    }
+
+    .btn-group {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn {
+        display: block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 18px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+
+    .btn-phone { background: #28a745; } /* สีเขียวโทร */
+    .btn-line { background: #00b900; }  /* สีเขียว Line */
+    
+    .btn:active { transform: scale(0.95); }
 </style>
 </head>
 
 <body>
 
-<img src="Supunsa_Card.png">
+    <div class="card-container">
+        <!-- รูปนามบัตรคุณสุพรรณษา -->
+        <img src="Supunsa_Card.png" alt="คุณสุพรรณษา - ปิ่นทองเทรดดิ้ง">
+
+        <!-- ปุ่มอำนวยความสะดวกให้ลูกค้า -->
+        <div class="btn-group">
+            <a href="tel:0875055900" class="btn btn-phone">📞 โทรติดต่อคุณสุพรรณษา</a>
+            <a href="https://line.me/ti/p/~supunsa.sa" class="btn btn-line">💬 ทัก LINE สอบถาม</a>
+        </div>
+    </div>
 
 </body>
 </html>
